@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_lay_username"
+            android:layout_margin="@dimen/dimen_16"
+            android:background="@drawable/common_rounded_button"
+            android:text="@string/choose"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:id="@+id/mLinearLayoutEditFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/icon_pdf"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_layout_main"
+                android:hint="Enter File Name"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_lay_username"
+            android:layout_margin="@dimen/dimen_16"
+            android:background="@drawable/common_rounded_button"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_list_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/common_rounded_button"
+            android:layout_margin="@dimen/dimen_16"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="List Of Document"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

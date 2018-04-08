@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">File Uploading</string>
+
+    <string name="emailtocheck">projectdev252</string>
+
+    <string name="donot_have_account">Don\'t have an account?</string>
+    <string name="emailtocheckp">Maxmobi@37</string>
+    <string name="app_heading">File Sharing</string>
+    <string name="user_login">User Login</string>
+    <string name="enter_your_emailId">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="signup">SignUp</string>
+    <string name="login">LogIn</string>
+    <string name="name">File Uploading</string>
+    <string name="user_signup">User SignUp</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="enter_your_confirm_password">Confirm your password</string>
+
+    <string name="already_have_account">Already have an account?</string>
+    <string name="upload_file">Upload File</string>
+    <string name="list_of_students">List Of Document</string>
+    <string name="logout">LogOut</string>
+    <string name="login_now">Login now</string>
+
+
+    <string name="teacher_login">Teacher Login</string>
+    <string name="student_login">Student Login</string>
+    <string name="teacher_signup">Teacher Signup</string>
+    <string name="view_attendence">View Attendence</string>
+    <string name="add_syllabus">Add Syllabus</string>\
+    <string name="view_syllabus">View Syllabus</string>
+    <string name="mark_attendence">Mark attendence</string>
+    <string name="settings">Settings</string>
+    <string name="under_development">Under development</string>
+    <string name="view_profile">View profile</string>
+    <string name="roll_number">Roll number</string>
+    <string name="type">type</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="please_enter_your_name">Please enter your name.</string>
+    <string name="please_enter_your_emailid">Please enter your EmailId</string>
+    <string name="please_enter_your_number">Please enter your number</string>
+    <string name="please_enter_your_password">Please enter your password.</string>
+    <string name="password_and_confirm_password_are_not_matched">Password and confirm password are not matched</string>
+    <string name="invalid_login">Invalid EmailId or Password.</string>
+    <string name="uplaod_a_syllabus">Upload File</string>
+    <string name="choose">Choose File</string>
+    <string name="upload">Upload File</string>
+    <string name="syllabus_uploaded_successfully">Syllabus uploaded successfully.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+
+
+</resources>

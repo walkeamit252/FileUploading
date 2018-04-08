@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EclipseCodeFormatterProjectSettings">
+    <option name="selectedGlobalProfile">
+      <Settings>
+        <option name="eclipseVersion" value="ECLIPSE_44" />
+        <option name="formatter" value="ECLIPSE" />
+        <option name="id" value="1453912134716" />
+        <option name="name" value="default" />
+        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../../tl eclipse code formmat (1).xml" />
+        <option name="useOldEclipseJavaFormatter" value="true" />
+      </Settings>
+    </option>
+  </component>
+</project>

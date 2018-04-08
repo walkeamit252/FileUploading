@@ -1,0 +1,96 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="app.com.fileuploading.fragment.ProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/mProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/proj_icon"/>
+
+    <View
+        android:id="@+id/mViewSeperator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_below="@id/mProfilePicture"
+        android:background="#000000"
+        />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mViewSeperator"
+        android:layout_margin="@dimen/dimen_16"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:padding="@dimen/dimen_10"
+                android:textSize="@dimen/dimen_16"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_below="@id/mProfilePicture"
+                android:background="#000000"
+                />
+
+
+            <TextView
+                android:id="@+id/mUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:padding="@dimen/dimen_10"
+                android:textSize="@dimen/dimen_16"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_below="@id/mProfilePicture"
+                android:background="#000000"
+                />
+
+            <TextView
+                android:id="@+id/mUserNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:padding="@dimen/dimen_10"
+                android:textSize="@dimen/dimen_16"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
