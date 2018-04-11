@@ -4,26 +4,35 @@ package app.com.fileuploading.model;
 public class UploadFileModel {
     public String name;
     public String url;
-    public String userId;
+    public String userName;
 
+    public String getUploaderName() {
+        return uploaderName;
+    }
+
+    public void setUploaderName(String uploaderName) {
+        this.uploaderName = uploaderName;
+    }
+
+    public String uploaderName;
 
     public UploadFileModel() {
     }
 
-    public UploadFileModel(String name, String url,String userId) {
+    public UploadFileModel(String name, String url,String userName) {
         this.name = name;
         this.url = url;
-        this.userId=userId;
+        this.userName=userName;
     }
-
 
     public String getUserId() {
-        return userId;
+        return userName;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUserId(String userName) {
+        this.userName = userName;
     }
+
     public String getName() {
         return name;
     }

@@ -1,15 +1,12 @@
 package app.com.fileuploading.fragment;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -26,7 +23,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import app.com.fileuploading.R;
 import app.com.fileuploading.adapter.UploadedListViewAdapter;
 import app.com.fileuploading.model.SignupModel;
@@ -102,7 +98,6 @@ public class UploadedListFragment extends Fragment {
                     mRecyclerView.setVisibility(View.VISIBLE);
                     mTxtNoDataFound.setVisibility(View.GONE);
                 }
-
             }
 
             @Override

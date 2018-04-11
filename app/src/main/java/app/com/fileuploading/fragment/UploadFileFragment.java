@@ -49,12 +49,11 @@ import app.com.fileuploading.utils.Constants;
 
 public class UploadFileFragment extends Fragment {
     @Nullable
-    private Button mButtonChooseFile,mButtonUploadFile,mBtnListDoc;
+    private Button mButtonChooseFile,mButtonUploadFile,mBtnListDoc,mBtnCreateCourse;
     StorageReference mStorageReference;
     DatabaseReference mDatabaseReference;
     Uri filePath;
     EditText mEditTextFileName;
-    ImageView mImageView;
     LinearLayout mLinearLayoutEdit;
     SharedPreferences prefs;
 
@@ -77,8 +76,10 @@ public class UploadFileFragment extends Fragment {
         mButtonChooseFile = (Button) view.findViewById(R.id.btn_choose);
         mButtonUploadFile = (Button) view.findViewById(R.id.btn_upload);
         mBtnListDoc = (Button) view.findViewById(R.id.btn_list_doc);
+        mBtnCreateCourse=(Button)view.findViewById(R.id.btn_create_course);
         mEditTextFileName=(EditText)view.findViewById(R.id.edit_text_file_name);
         mLinearLayoutEdit=(LinearLayout)view.findViewById(R.id.mLinearLayoutEditFile);
+
     }
 
     private void setListner() {
@@ -86,6 +87,7 @@ public class UploadFileFragment extends Fragment {
         mButtonChooseFile.setOnClickListener(new ChooseButtonListener());
         mButtonUploadFile.setOnClickListener(new UploadButtonclickListner());
         mBtnListDoc.setOnClickListener(new ShowListDocumentFragment());
+        mBtnCreateCourse.setOnClickListener(new CreateCourseClick());
 
     }
 
@@ -100,7 +102,6 @@ public class UploadFileFragment extends Fragment {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && ContextCompat.checkSelfPermission(getActivity(),
                 Manifest.permission.READ_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
-
             Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
                     Uri.parse("package:" + getActivity().getPackageName()));
             startActivity(intent);
@@ -124,7 +125,6 @@ public class UploadFileFragment extends Fragment {
                 filePath=data.getData();
                 if(getMimeType(getActivity(),filePath).equalsIgnoreCase("pdf")){
                     filePath=data.getData();
-                    mLinearLayoutEdit.setVisibility(View.VISIBLE);
                 }else {
                     filePath=null;
                     Toast.makeText(getActivity(), "Please select PDF Only", Toast.LENGTH_SHORT).show();
@@ -160,7 +160,7 @@ public class UploadFileFragment extends Fragment {
                         Gson gson = new Gson();
                         String json = prefs.getString(Constants.USER_MODEL, "");
                         SignupModel userModel = gson.fromJson(json, SignupModel.class);
-                        UploadFileModel model=new UploadFileModel(fileName,taskSnapshot.getDownloadUrl().toString(),userModel.getUserid());
+                        UploadFileModel model=new UploadFileModel(fileName,taskSnapshot.getDownloadUrl().toString(),userModel.getName());
                         mDatabaseReference.child(mDatabaseReference.push().getKey()).setValue(model);
                     }
                 })
@@ -187,7 +187,11 @@ public class UploadFileFragment extends Fragment {
     private class ChooseButtonListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            getPDF();
+            if(!TextUtils.isEmpty(mEditTextFileName.getText().toString())){
+                getPDF();
+            }else {
+                Toast.makeText(getActivity(),"Please Enter Course Name",Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -215,4 +219,10 @@ public class UploadFileFragment extends Fragment {
         return extension;
     }
 
+    private class CreateCourseClick implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            mLinearLayoutEdit.setVisibility(View.VISIBLE);
+        }
+    }
 }

@@ -8,17 +8,16 @@
         android:id="@+id/linear_layout_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_choose"
+            android:id="@+id/btn_create_course"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/input_lay_username"
             android:layout_margin="@dimen/dimen_16"
             android:background="@drawable/common_rounded_button"
-            android:text="@string/choose"
+            android:text="@string/create_course"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -44,12 +43,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/linear_layout_main"
-                android:hint="Enter File Name"
+                android:hint="Enter Course Name"
                 android:layout_marginLeft="@dimen/dimen_16"
                 android:layout_gravity="center" />
 
 
         </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_lay_username"
+            android:layout_margin="@dimen/dimen_16"
+            android:background="@drawable/common_rounded_button"
+            android:text="@string/choose"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+
+
 
 
         <Button

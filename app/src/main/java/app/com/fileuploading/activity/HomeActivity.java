@@ -50,7 +50,6 @@ public class HomeActivity extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.icon_menu_list);
 
-
         setDefaultView();
         NavigationView navigationView = findViewById(R.id.nav_view);
         View header=navigationView.getHeaderView(0);

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import app.com.fileuploading.R;
@@ -29,14 +30,16 @@ public class UploadedListViewAdapter extends RecyclerView.Adapter<UploadedListVi
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
         ImageView imageView;
-        LinearLayout mLayout;
+        RelativeLayout mLayout;
+        TextView mUserName;
 
 
         public MyViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.txt_view_title);
-            imageView = (ImageView) view.findViewById(R.id.image_view);
-            mLayout=(LinearLayout)view.findViewById(R.id.linear_layout_row_main);
+            mUserName=(TextView)view.findViewById(R.id.txt_user_name);
+            //imageView = (ImageView) view.findViewById(R.id.image_view);
+            mLayout=(RelativeLayout)view.findViewById(R.id.linear_relative_row_main);
         }
     }
 
@@ -65,6 +68,7 @@ public class UploadedListViewAdapter extends RecyclerView.Adapter<UploadedListVi
                 fileItemClick.onFileItemClick(position);
             }
         });
+        holder.mUserName.setText(document.getUserId());
 
 
 //        Glide.with(mContext).

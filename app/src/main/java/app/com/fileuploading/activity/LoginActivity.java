@@ -33,7 +33,6 @@ import app.com.fileuploading.utils.Constants;
 
 
 public class LoginActivity extends AppCompatActivity {
-
     private EditText etEmailid;
     private EditText etPassword;
     DatabaseReference mDatabaseReference;
@@ -77,9 +76,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setListener() {
-
         btnLogin.setOnClickListener(new LoginButtonClickListner());
-
         txtSignup.setOnClickListener(new SignupClickListner());
     }
 
