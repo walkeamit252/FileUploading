@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">File Uploading</string>
+    <string name="app_name">Course Managment System</string>
 
     <string name="emailtocheck">projectdev252</string>
 
@@ -54,6 +54,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="profile">Profile</string>
     <string name="create_course">Create Course</string>
+    <string name="home">Home</string>
 
 
 </resources>

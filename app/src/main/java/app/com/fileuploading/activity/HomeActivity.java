@@ -43,13 +43,11 @@ public class HomeActivity extends AppCompatActivity {
         prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         mTxtUserName=(TextView)findViewById(R.id.txt_profile_user_name);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.icon_menu_list);
-
         setDefaultView();
         NavigationView navigationView = findViewById(R.id.nav_view);
         View header=navigationView.getHeaderView(0);
@@ -88,10 +86,10 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.nav_upload_file:
                 fragmentClass = UploadFileFragment.class;
                 break;
-
-            case R.id.nav_list_file:
-                fragmentClass = UploadedListFragment.class;
-                break;
+//
+//            case R.id.nav_list_file:
+//                fragmentClass = UploadedListFragment.class;
+//                break;
 
             case R.id.nav_view_profile:
                 fragmentClass = ProfileFragment.class;

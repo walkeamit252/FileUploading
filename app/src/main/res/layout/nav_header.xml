@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="@dimen/dimen_20"
-        android:src="@drawable/proj_icon"
+        android:src="@drawable/logo_trans"
         android:layout_gravity="center"/>
 
     <TextView
