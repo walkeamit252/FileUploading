@@ -23,7 +23,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/name"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:textColor="@android:color/white"
         android:layout_marginLeft="@dimen/dimen_16"
         android:fontFamily="sans-serif"/>

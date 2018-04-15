@@ -46,7 +46,7 @@
     <string name="password_and_confirm_password_are_not_matched">Password and confirm password are not matched</string>
     <string name="invalid_login">Invalid EmailId or Password.</string>
     <string name="uplaod_a_syllabus">Upload File</string>
-    <string name="choose">Choose File</string>
+    <string name="choose">Select File</string>
     <string name="upload">Upload File</string>
     <string name="syllabus_uploaded_successfully">Syllabus uploaded successfully.</string>
 
