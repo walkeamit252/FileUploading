@@ -22,7 +22,7 @@
         android:layout_below="@+id/txt_heading"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/dimen_20"
-        android:src="@drawable/proj_icon" />
+        android:src="@drawable/app_main_logo" />
 
 
     <android.support.design.widget.TextInputLayout

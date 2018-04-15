@@ -10,7 +10,7 @@
         android:id="@+id/mProfilePicture"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/proj_icon"/>
+        android:src="@drawable/app_main_logo"/>
 
     <View
         android:id="@+id/mViewSeperator"

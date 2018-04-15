@@ -135,7 +135,7 @@ public class UserSignupActivity extends AppCompatActivity {
                             Log.i(TAG, "onComplete: EXCEPTION"+task.getException());
                             Toast.makeText(UserSignupActivity.this, task.getException().toString(), Toast.LENGTH_LONG).show();
                         }
-                        progressDialog.dismiss();
+
                     }
                 });
     }
@@ -154,7 +154,6 @@ public class UserSignupActivity extends AppCompatActivity {
         SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putBoolean("isStudent", true);
-
         editor.commit();
     }
 
@@ -171,6 +170,9 @@ public class UserSignupActivity extends AppCompatActivity {
         Gson gson = new Gson();
         String json = gson.toJson(signupModel);
         prefs.edit().putString(Constants.USER_MODEL,json).commit();
+
+        progressDialog.dismiss();
+
 
     }
 
